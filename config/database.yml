@@ -13,11 +13,12 @@
 # gem 'pg'
 #
 development:
+  host: localhost
   adapter: postgresql
   encoding: unicode
-  database: todo_3.2.13_development
+  database: todo_3_2_13_development
   pool: 5
-  username: todo_3.2.13
+  username: postgres
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -38,18 +39,11 @@ development:
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
-test:
-  adapter: postgresql
-  encoding: unicode
-  database: todo_3.2.13_test
-  pool: 5
-  username: todo_3.2.13
-  password:
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: todo_3.2.13_production
+  database: todo_3_2_13_production
   pool: 5
-  username: todo_3.2.13
+  username: postgres
   password:
